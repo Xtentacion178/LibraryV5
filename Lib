@@ -1580,10 +1580,10 @@ function redzlib:MakeWindow(Configs)
 	local Window, FirstTab = {}, false
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
-			Title = "Close",
-			Text = "You Want Close Ui?",
+			Title = "",
+			Text = "Você tem certeza de que deseja fechar o SHNMAXHUB?",
 			Options = {
-				{"Confirm", function()
+				{"Fechar", function()
 					ScreenGui:Destroy()
 				end},
 				{"Cancel"}
